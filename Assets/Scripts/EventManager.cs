@@ -35,6 +35,8 @@ public class EventManager : MonoBehaviour {
 	private bool audioOn = true;
 	// Create reference to players[] so we can associate it to GameManager
 	public string[] players;
+	// Reference to Terminal Output, so we can clear it.
+	public Text terminalOutput;
 	
 	void Start() {
 		inputField = GameObject.Find ("Canvas.InputField").GetComponent<Text> ();
@@ -99,5 +101,9 @@ public class EventManager : MonoBehaviour {
 	public void ChatShow() {
 		ChatShown = !ChatShown;
 		chatPanel.SetActive (ChatShown);
+	}
+
+	public void ClearTerminal() {
+		terminalOutput.text = "";
 	}
 }
