@@ -11,13 +11,14 @@ public class NewPlayerID : MonoBehaviour {
 	public Text updateStatus;
 	
 	void Start () {
-		updateStatus = GameObject.FindGameObjectWithTag ("Status").GetComponent<Text>();
 		myNewPlayer = GameManager.instance.tempname;
 		gameObject.name = myNewPlayer;
 		Debug.Log ("myNewPlayer = " + myNewPlayer);
 		GameManager.instance.AddPlayer(myNewPlayer);
 		GameManager.instance.numPlayers += 1;
 		Debug.Log ("Player " + myNewPlayer + " has joined the game.");
+		//TODO: How can I get this to load as soon as a prefab character is added?!
+		//updateStatus = GameObject.Find("Status Panel").GetComponent<Text>();
 		updateStatus.text = updateStatus.text + "Player " + myNewPlayer + " has joined the game.";
 	}
 

@@ -10,8 +10,12 @@ public class EventManager : MonoBehaviour {
 
 	private string tempname;
 	private string mytempname;
+	// Input field for Wall Terminal
 	public Text inputField = null;
+	// Input field for Name Entry Field, in Main Menu (not active)
 	public Text NameInputField = null;
+	// Input field for Chat Dialog
+	public Text chatInputField = null;
 	public Camera myCamera;
 	public Canvas canvas;
 	// Define Menu gameobjects so we can show/hide the Main Menu
@@ -35,6 +39,7 @@ public class EventManager : MonoBehaviour {
 	void Start() {
 		inputField = GameObject.Find ("Canvas.InputField").GetComponent<Text> ();
 		NameInputField = GameObject.Find ("Menu Panel.NameInputField").GetComponent<Text> ();
+		chatInputField = GameObject.Find ("Chat Panel.chatInputField").GetComponent<Text> ();
 	}
 
 	// This is used from the Start Scene - (trying to get rid of this)

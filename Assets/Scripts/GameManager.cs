@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour {
 	public int numTerminals = 0;
 	// Create variable for tracking single user char controller functionality
 	public bool lockCharController = false;
+	// Define the statusBlock so we can send text there.
 	public Text statusBlock;
 	// TESTING
 	public string myNewPlayer;
