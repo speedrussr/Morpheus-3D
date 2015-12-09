@@ -16,16 +16,19 @@ public class EventManager : MonoBehaviour {
 	public Canvas canvas;
 	// Define Menu gameobjects so we can show/hide the Main Menu
 	public GameObject menu;
-	private bool MenuShown = false;
+	public bool MenuShown = true;
 	// Define the statusMenu, so we can show/hide it
 	public GameObject statusPanel;
-	private bool StatusShown = false;
+	public bool StatusShown = true;
+	// Define the chatMenu, so we can show/hide it
+	public GameObject chatPanel;
+	public bool ChatShown = true;
 	// Define the network HUD, so we can show/hide it
 	public GameObject networkHUD;
-	private bool hudShown = false;
+	public bool hudShown = true;
 	// Define audioSource, so we can enable/disable
 	public GameObject audioSource;
-	private bool audioOn = false;
+	private bool audioOn = true;
 	// Create reference to players[] so we can associate it to GameManager
 	public string[] players;
 	
@@ -88,4 +91,8 @@ public class EventManager : MonoBehaviour {
 		audioSource.SetActive (audioOn);
 	}
 
+	public void ChatShow() {
+		ChatShown = !ChatShown;
+		chatPanel.SetActive (ChatShown);
+	}
 }
