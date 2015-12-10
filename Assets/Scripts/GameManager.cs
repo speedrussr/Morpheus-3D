@@ -25,6 +25,10 @@ public class GameManager : MonoBehaviour {
 	// TESTING
 	public string myNewPlayer;
 	public Text updateStatus;
+	// Has the player selected a name?
+	public bool nameSelected = false;
+	
+	public GameObject myNamePanel;
 
 	// Private Variables
 	
@@ -51,8 +55,10 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	
+		if (GameManager.instance.nameSelected == true && nameSelected == true) {
+			myNamePanel = GameObject.Find ("Name Panel");
+			myNamePanel.SetActive(false);
+		}
 	}
 
 	// Add a new player name to the array of players

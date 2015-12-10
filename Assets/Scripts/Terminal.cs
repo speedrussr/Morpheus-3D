@@ -21,7 +21,7 @@ public class Terminal : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//gameObject.SetActive(false);
+
 		myCamera.enabled = false;
 		canvas.enabled = false;
 		// Create the Character Controller relationship, so we can enable/disable
@@ -33,7 +33,8 @@ public class Terminal : MonoBehaviour {
 	void Update () {
 		//Allow interaction with the terminal pop up and input box.
 		// Look for the mouse button to be pressed.
-		if (Input.GetMouseButtonDown (0)) {
+		//if (Input.GetMouseButtonDown (0)) {
+		if (Input.GetKeyDown("e")) {
 			// If the terminal console is marked as active, and a user clicks, then close the terminal
 			// And the global variable is marked as INACTIVE
 			if (GameManager.instance.consoleActive == true) {
