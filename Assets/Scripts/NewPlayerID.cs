@@ -28,10 +28,6 @@ public class NewPlayerID : MonoBehaviour {
 		GameManager.instance.AddPlayer(myNewPlayer);
 		GameManager.instance.numPlayers += 1;
 		Debug.Log ("Player " + myNewPlayer + " has joined the game.");
-		// Now let's disable the panel for entering a new username
-
-		//TODO: How can I get this to load as soon as a prefab character is added?!
-		//updateStatus.text = updateStatus.text + "Player " + myNewPlayer + " has joined the game.";
 	}
 
 	void OnDisconnectedFromServer() {
@@ -48,17 +44,5 @@ public class NewPlayerID : MonoBehaviour {
 		Debug.Log(mytempname);
 		GameManager.instance.tempname = mytempname;
 		gameObject.name = tempname;
-		// Let's find the first empty index in the players[]
-		//int myIndex;
-		//int myPlayerNumber;
-		//for (myIndex = 0; myIndex <= GameManager.players.Length - 1; myIndex++) {
-		//	if (GameManager.players[myIndex] == mytempname) {
-		//		myPlayerNumber = myIndex;
-		//		Debug.Log("My player exists. My player number is: " + myIndex);
-		//	} else if(GameManager.players[myIndex] == null) {
-		//		myIndex = myIndex - 1;
-		//		Debug.Log("My player does not exist. My new player number is: " + myIndex);
-		//	}
-		//}
 	}
 }

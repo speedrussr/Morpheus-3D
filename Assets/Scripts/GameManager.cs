@@ -14,8 +14,10 @@ public class GameManager : MonoBehaviour {
 	public int numPlayers;
 	// Create an array containing the names of user players
 	public string[] players;
+
 	// Default name string for users who don't enter a name at start screen
 	public string tempname = "John Doe";
+
 	// Start with 0 terminals, increment for naming, as new terminals added
 	public int numTerminals = 0;
 	// Create variable for tracking single user char controller functionality
@@ -51,13 +53,16 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		numPlayers = 0;
+		nameSelected = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (GameManager.instance.nameSelected == true && nameSelected == true) {
+		if (myNamePanel != null) {
+			if (nameSelected == true) {
 			myNamePanel = GameObject.Find ("Name Panel");
 			myNamePanel.SetActive(false);
+			}
 		}
 	}
 
@@ -68,8 +73,9 @@ public class GameManager : MonoBehaviour {
 
 	// List the players in the game - ignore null entries
 	public void ListPlayers() {
+		statusBlock = GameObject.Find ("Status Panel").GetComponent<Text> ();
+		Debug.Log ("In List Players function");
 		foreach(string element in players){
-			//statusBlock.text = (statusBlock.text + element + "\n");
 			if(element == null){
 				return;
 			} else {
@@ -78,18 +84,4 @@ public class GameManager : MonoBehaviour {
 			}
 		}
 	}
-
-//	public void NewPlayerName() {
-//		Debug.Log ("In NewPlayerName function of NewPlayerID script...");
-//		updateStatus = GameObject.Find ("Status Panel").GetComponent<Text>();
-//		myNewPlayer = GameManager.instance.tempname;
-//		gameObject.name = myNewPlayer;
-//
-//		Debug.Log ("myNewPlayer = " + myNewPlayer);
-//		GameManager.instance.AddPlayer(myNewPlayer);
-//		GameManager.instance.numPlayers += 1;
-//		Debug.Log ("Player " + myNewPlayer + " has joined the game.");
-//		updateStatus.text = updateStatus.text + "Player " + myNewPlayer + " has joined the game.";
-//	}
-	
 }

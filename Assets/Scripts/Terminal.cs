@@ -16,7 +16,7 @@ public class Terminal : MonoBehaviour {
 	public CharacterController cc;
 
 	void Awake() {
-		cc.enabled = true;
+		//cc.enabled = true;
 	}
 
 	// Use this for initialization
@@ -25,8 +25,8 @@ public class Terminal : MonoBehaviour {
 		myCamera.enabled = false;
 		canvas.enabled = false;
 		// Create the Character Controller relationship, so we can enable/disable
-		cc = GameObject.Find ("Player").GetComponent<CharacterController> ();
-		cc.enabled = true;
+		//cc = GameObject.Find ("Player").GetComponent<CharacterController> ();
+		//cc.enabled = true;
 	}
 	
 	// Update is called once per frame
@@ -40,7 +40,7 @@ public class Terminal : MonoBehaviour {
 			if (GameManager.instance.consoleActive == true) {
 				GameManager.instance.consoleActive = false;
 				if(GameManager.instance.lockCharController == false) {
-					cc.enabled = true;
+					//cc.enabled = true;
 					myCamera.enabled = false;
 				}
 			} else {
@@ -52,7 +52,7 @@ public class Terminal : MonoBehaviour {
 				if (hit.transform.gameObject.tag == "Terminal") {
 					GameManager.instance.lockCharController = true;
 					if(GameManager.instance.lockCharController == true) {
-						cc.enabled = false;
+						//cc.enabled = false;
 					}
 					GameManager.instance.consoleActive = true;
 					myCamera.enabled = true;
