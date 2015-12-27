@@ -1,15 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ImportXML.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InstantiateNetwork.cs">
     <Files>
-      <File FileName="Assets/Scripts/InstantiateNetwork.cs" Line="279" Column="24" />
+      <File FileName="Assets/Scripts/InstantiateNetwork.cs" Line="29" Column="80" />
       <File FileName="Assets/Scripts/Chat.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="55" Column="24" />
-      <File FileName="Assets/Scripts/EventManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EventManager.cs" Line="44" Column="1" />
       <File FileName="Assets/Scripts/NewPlayerID.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Terminal.cs" Line="19" Column="5" />
-      <File FileName="Assets/Scripts/TestScript.cs" Line="13" Column="25" />
-      <File FileName="Assets/Scripts/ImportXML.cs" Line="56" Column="4" />
+      <File FileName="Assets/Scripts/Terminal.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TestScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ImportXML.cs" Line="132" Column="78" />
+      <File FileName="Assets/Scripts/CharHotKeys.cs" Line="16" Column="58" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

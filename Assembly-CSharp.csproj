@@ -49,6 +49,7 @@
      <Compile Include="Assets\Fantasy Skybox\Scripts\FSPlayer.cs" />
      <Compile Include="Assets\Fantasy Skybox\Scripts\FantasySkyboxUIController.cs" />
      <Compile Include="Assets\GUI Animator FREE\Scripts\Demo\Demo.cs" />
+     <Compile Include="Assets\Scripts\CharHotKeys.cs" />
      <Compile Include="Assets\Scripts\Chat.cs" />
      <Compile Include="Assets\Scripts\EventManager.cs" />
      <Compile Include="Assets\Scripts\GUIControls.cs" />

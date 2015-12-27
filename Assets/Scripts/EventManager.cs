@@ -92,4 +92,12 @@ public class EventManager : MonoBehaviour {
 	public void ClearTerminal() {
 		terminalOutput.text = "";
 	}
+
+	public void GoNet() {
+		transform.position = new Vector3 (-160, -27, -20);
+	}
+
+	public void GoHome() {
+		transform.position = new Vector3 (0, 10, 0);
+	}
 }
