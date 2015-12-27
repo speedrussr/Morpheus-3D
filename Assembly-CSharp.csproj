@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\GUIControls.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\ImportXML.cs" />
+     <Compile Include="Assets\Scripts\InstantiateNetwork.cs" />
      <Compile Include="Assets\Scripts\NewPlayerID.cs" />
      <Compile Include="Assets\Scripts\Terminal.cs" />
      <Compile Include="Assets\Scripts\TestScript.cs" />

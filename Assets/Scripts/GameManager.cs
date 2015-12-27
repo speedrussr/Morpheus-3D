@@ -29,7 +29,6 @@ public class GameManager : MonoBehaviour {
 	public Text updateStatus;
 	// Has the player selected a name?
 	public bool nameSelected = false;
-	
 	public GameObject myNamePanel;
 
 	// Private Variables

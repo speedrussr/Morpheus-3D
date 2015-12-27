@@ -12,6 +12,10 @@ namespace XMLTest3
 	public class ImportXML : MonoBehaviour
 	{
 		public Text output;
+		// Define starting index for Instantiation Array
+		public int startIndex;
+		public InstantiateNetwork myInstantiationScript;
+
 		string currentText;
 		string newHost;
 		string newPort;
@@ -45,10 +49,12 @@ namespace XMLTest3
 							// If "address" has attributes, we'll output the IP address, identified by "addr" attribute
 							if (reader.HasAttributes)
 							{
-								newHost = ("Host: " + reader.GetAttribute("addr") + "\n");
-								currentText = output.text + newHost;
+								newHost = (reader.GetAttribute("addr") + "\n");
+								currentText = (output.text + "Host: " + newHost);
 								output.text = currentText;
 							}
+							startIndex++;
+							myInstantiationScript.instantiateEntity(newHost);
 							// If Host has ports open, let's reiteratively list those.
 							reader.ReadToFollowing("port");
 							if (reader.Name == "port" && reader.HasAttributes)
@@ -71,7 +77,8 @@ namespace XMLTest3
 					}
 				}
 			}
-			Debug.Log("---------------------------------------\n" + counter + " hosts responded during scanning.\n");
+			output.text = output.text + "END OF FILE\n";
+			output.text = output.text + counter + " hosts responded during scanning.\n";
 		}
 	}
 }
