@@ -48,15 +48,15 @@ namespace XMLTest3
 							// If "address" has attributes, we'll output the IP address, identified by "addr" attribute
 							if (reader.HasAttributes)
 							{
-								newHost = (reader.GetAttribute("addr") + "\n");
-								currentText = (output.text + "Host: " + newHost);
+								newHost = (reader.GetAttribute("addr"));
+								currentText = (output.text + "\nHost: " + newHost);
 								output.text = currentText;
 							}
 							// If Host has ports open, let's reiteratively list those.
 							reader.ReadToFollowing("port");
 							if (reader.Name == "port" && reader.HasAttributes)
 							{
-								string portHeader = "Ports: ";
+								string portHeader = "  ||  Ports: ";
 								output.text = output.text + portHeader;
 								// While we still have port elements left in this host, cycle through them all.
 								while (reader.Name == "port" && reader.HasAttributes)
@@ -68,8 +68,28 @@ namespace XMLTest3
 									output.text = currentText;
 									reader.ReadToNextSibling("port");
 								}
-								output.text = output.text + "\n-----\n";
+								//output.text = output.text + "\n-----\n";
 							}
+							// Let's look at operating systems. I'm not going to cycle through them all.
+							// The first listing in the XML is highest rated possibility. We're try it first.
+//							reader.ReadToFollowing("os");
+//							if (reader.Name == "os" && reader.HasAttributes)
+//							{
+//								Debug.Log("In OS Detection now...");
+//								string osHeader = "OS:  ";
+//								output.text = output.text + osHeader;
+//								// While we still have port elements left in this host, cycle through them all.
+//								while (reader.Name == "osmatch" && reader.HasAttributes)
+//								{
+//									// Collect all the new data, concatenate to existing text, re-output to text window
+//									newPort = (reader.GetAttribute("name") + ", ");
+//									//newPort = (" - port: " + reader.GetAttribute("portid") + "\n");
+//									currentText = output.text + newPort;
+//									output.text = currentText;
+//									reader.ReadToNextSibling("name");
+//								}
+//								output.text = output.text + "\n-----\n";
+//							}
 						}
 					}
 				}
