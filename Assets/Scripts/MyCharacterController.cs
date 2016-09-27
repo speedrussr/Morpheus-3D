@@ -2,11 +2,14 @@
 using System.Collections;
 using UnityEngine.Networking;
 
-public class CharacterController : NetworkBehaviour {
+[DisallowMultipleComponent]
+public class MyCharacterController : NetworkBehaviour {
 
 	public float inputDelay = 0.1f;
 	public float forwardVel = 12;
 	public float rotateVel = 100;
+
+	Animator anim;
 
 	Quaternion targetRotation;
 	Rigidbody rBody;
@@ -17,6 +20,9 @@ public class CharacterController : NetworkBehaviour {
 		get { return targetRotation; }
 	}
 
+	void Awake() {
+		anim = GetComponent<Animator> ();
+	}
 
 	void Start () {
 		targetRotation = transform.rotation;
@@ -25,12 +31,14 @@ public class CharacterController : NetworkBehaviour {
 		else {
 			Debug.LogError ("The character needs a rigidbody.");
 		}
+		// Set all input levels to 0, to start off
 		forwardInput = turnInput = 0;
 	}
 
 	void GetInput() {
 		forwardInput = Input.GetAxis ("Vertical");
 		turnInput = Input.GetAxis ("Horizontal");
+		anim.SetFloat("Forward", Input.GetAxis("Vertical"));
 	}
 
 	void Update () {

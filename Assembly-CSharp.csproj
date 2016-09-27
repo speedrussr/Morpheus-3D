@@ -49,7 +49,6 @@
      <Compile Include="Assets\Fantasy Skybox\Scripts\FantasySkyboxUIController.cs" />
      <Compile Include="Assets\GUI Animator FREE\Scripts\Demo\Demo.cs" />
      <Compile Include="Assets\Scripts\CharHotKeys.cs" />
-     <Compile Include="Assets\Scripts\CharacterController.cs" />
      <Compile Include="Assets\Scripts\Chat.cs" />
      <Compile Include="Assets\Scripts\EventManager.cs" />
      <Compile Include="Assets\Scripts\FaceCamera.cs" />
@@ -58,6 +57,7 @@
      <Compile Include="Assets\Scripts\ImportXML.cs" />
      <Compile Include="Assets\Scripts\InstantiateNetwork.cs" />
      <Compile Include="Assets\Scripts\MovementBeta.cs" />
+     <Compile Include="Assets\Scripts\MyCharacterController.cs" />
      <Compile Include="Assets\Scripts\NetEntityAttributes.cs" />
      <Compile Include="Assets\Scripts\NewPlayerID.cs" />
      <Compile Include="Assets\Scripts\Terminal.cs" />
