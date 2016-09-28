@@ -58,8 +58,12 @@
      <Compile Include="Assets\Scripts\InstantiateNetwork.cs" />
      <Compile Include="Assets\Scripts\MovementBeta.cs" />
      <Compile Include="Assets\Scripts\MyCharacterController.cs" />
+     <Compile Include="Assets\Scripts\MyDNSFunctions.cs" />
+     <Compile Include="Assets\Scripts\MyNetFunctions.cs" />
+     <Compile Include="Assets\Scripts\MyWhois.cs" />
      <Compile Include="Assets\Scripts\NetEntityAttributes.cs" />
      <Compile Include="Assets\Scripts\NewPlayerID.cs" />
+     <Compile Include="Assets\Scripts\PortScan.cs" />
      <Compile Include="Assets\Scripts\Terminal.cs" />
      <Compile Include="Assets\Scripts\TestScript.cs" />
      <Compile Include="Assets\UniFileBrowser Assets\Demo\UniFileBrowserExample.cs" />
