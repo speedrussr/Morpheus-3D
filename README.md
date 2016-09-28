@@ -2,12 +2,12 @@
 
 Current Morpheus controls:
 
-Forward = W or up arrow
-Backward = S or down arrow
-Left Turn = A or left arrow
-Right Turn = D or right arrow
-Jump = Space Bar
-Run = Left Shift + Forward
+Forward = W or up arrow<br>
+Backward = S or down arrow<br>
+Left Turn = A or left arrow<br>
+Right Turn = D or right arrow<br>
+Jump = Space Bar<br>
+Run = Left Shift + Forward<br>
 
 Terminal Controls:
 
