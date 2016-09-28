@@ -6,13 +6,13 @@ using UnityEngine.Networking;
 public class MyCharacterController : NetworkBehaviour {
 
 	public float inputDelay = 0.1f;
-	public float forwardVel = 12;
+	public float forwardVel = 40;
 	public float rotateVel = 100;
 
 	Animator anim;
 
 	Quaternion targetRotation;
-	Rigidbody rBody;
+	//Rigidbody rBody;
 	float forwardInput, turnInput;
 
 	public Quaternion TargetRotation
@@ -26,11 +26,11 @@ public class MyCharacterController : NetworkBehaviour {
 
 	void Start () {
 		targetRotation = transform.rotation;
-		if(GetComponent<Rigidbody>())
-			rBody = GetComponent<Rigidbody> ();
-		else {
-			Debug.LogError ("The character needs a rigidbody.");
-		}
+//		if(GetComponent<Rigidbody>())
+//			rBody = GetComponent<Rigidbody> ();
+//		else {
+//			Debug.LogError ("The character needs a rigidbody.");
+//		}
 		// Set all input levels to 0, to start off
 		forwardInput = turnInput = 0;
 	}
@@ -53,12 +53,12 @@ public class MyCharacterController : NetworkBehaviour {
 	}
 
 	void Run () {
-		if (Mathf.Abs(forwardInput) > inputDelay) {
-			//move
-			rBody.velocity = transform.forward * forwardInput * forwardVel;
-		} else 
-			//zero velocity
-			rBody.velocity = Vector3.zero;
+//		if (Mathf.Abs(forwardInput) > inputDelay) {
+//			//move
+//			rBody.velocity = transform.forward * forwardInput * forwardVel;
+//		} else 
+//			//zero velocity
+//			rBody.velocity = Vector3.zero;
 	}
 
 	void Turn() {
