@@ -41,9 +41,9 @@ public class EventManager : MonoBehaviour {
 	public Text terminalOutput;
 	
 	void Start() {
-		inputField = GameObject.Find ("Canvas.InputField").GetComponent<Text> ();
-		chatInputField = GameObject.Find ("Chat Panel.chatInputField").GetComponent<Text> ();
-		statusPanelText = GameObject.Find ("Status Panel").GetComponent<Text>();
+//		inputField = GameObject.Find ("Canvas.InputField").GetComponent<Text> ();
+//		chatInputField = GameObject.Find ("Chat Panel.chatInputField").GetComponent<Text> ();
+//		statusPanelText = GameObject.Find ("Status Panel").GetComponent<Text>();
 	}
 
 	// This is used from the Start Scene - (trying to get rid of this)
