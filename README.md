@@ -41,3 +41,15 @@ the previous Input field, these fields all begin operation when the user
 presses the <ENTER> key.
 
 Output for built-in functions is displayed in the Terminal Output window.
+
+
+-------- Note for Russ ------------
+
+Morpheus could benefit from the use of JSON output data format:
+	- It's simpler to implement
+	- It's simpler to parse
+	- It's much easier for humans to read and understand (more intuitive)
+Can I create JSON formatted data from built-in network functions?
+	- How is this storage mechanism impacted when we introduce dynamic information gathering (live network feed)?
+
+

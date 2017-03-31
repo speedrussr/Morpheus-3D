@@ -5,7 +5,7 @@ using UnityEngine.Networking;
 //using NewPlayerID;
 
 public class Terminal : MonoBehaviour {
-	private RaycastHit hit;
+	//private RaycastHit hit;
 	public Canvas canvas;
 	public GameObject NetworkManagerHUD;
 	string myPlayerName;

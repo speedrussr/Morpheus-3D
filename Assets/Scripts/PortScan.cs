@@ -5,6 +5,9 @@ using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
 using System;
+// Not sure if the following include will enable use of JSON serialization, yet.
+using System.Runtime.Serialization;
+//using System.Web.Script.Serialization;
 
 public class PortScan : MonoBehaviour {
 	// Identify the InputField we'll use for the address input

@@ -1,11 +1,11 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{1CD8EC26-480F-7C6E-BA26-CD28567E7046}") = "Rogers-SIP", "Assembly-CSharp-firstpass.csproj", "{56E4087A-5719-9219-9A85-9AACE2C55BA5}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rogers-SIP", "Assembly-CSharp-firstpass.csproj", "{56E4087A-5719-9219-9A85-9AACE2C55BA5}"
 EndProject
-Project("{1CD8EC26-480F-7C6E-BA26-CD28567E7046}") = "Rogers-SIP", "Assembly-CSharp.csproj", "{BE5A0919-E8CF-D046-239E-39618EFE156F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rogers-SIP", "Assembly-CSharp.csproj", "{BE5A0919-E8CF-D046-239E-39618EFE156F}"
 EndProject
-Project("{1CD8EC26-480F-7C6E-BA26-CD28567E7046}") = "Rogers-SIP", "Assembly-CSharp-Editor.csproj", "{FE9F0E0B-D953-DB16-637A-29123CBC20CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rogers-SIP", "Assembly-CSharp-Editor.csproj", "{FE9F0E0B-D953-DB16-637A-29123CBC20CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

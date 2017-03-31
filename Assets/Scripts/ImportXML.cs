@@ -26,6 +26,7 @@ namespace XMLTest3
 			int counter = 0;
 			// Let's set our XmlReaderSettings to allow XML from any source
 			XmlReaderSettings readerSettings = new XmlReaderSettings();
+			// Next line is critical for sharing scan results
 			readerSettings.ProhibitDtd = false;
 			//readerSettings.DtdProcessing = DtdProcessing.Parse;
 			// Use the System.XML.XmlReader class to open the current.xml output from NMAP
