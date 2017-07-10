@@ -94,7 +94,7 @@ public class EventManager : MonoBehaviour {
 	}
 
 	public void GoNet() {
-		transform.position = new Vector3 (-160, -27, -20);
+		transform.position = new Vector3 (-140, 10, 0);
 	}
 
 	public void GoHome() {

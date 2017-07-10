@@ -83,7 +83,7 @@ public class PortScan : MonoBehaviour {
 				UnityEngine.Debug.Log ("Port " + currentPort + " threw the following exception: \n" + ex);
 			}
 
-			yield return new WaitForSeconds (1.0f);
+			yield return 0;
 			tcpScanner.Close();
 		}		
 		newText = ("Portscan complete.\n---------------------------------------\n");

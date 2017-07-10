@@ -11,7 +11,7 @@ public class CharHotKeys : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	if (Input.GetKey (KeyCode.N)) {
-			gameObject.transform.position = new Vector3 (-194, 1, -5);
+			gameObject.transform.position = new Vector3 (-160, 10, -5);
 		} else if (Input.GetKey (KeyCode.H)) {
 			gameObject.transform.position = new Vector3 (0, 1, 0);
 		}
