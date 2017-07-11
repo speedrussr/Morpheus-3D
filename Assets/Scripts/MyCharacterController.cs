@@ -49,16 +49,13 @@ public class MyCharacterController : NetworkBehaviour {
 	}
 
 	void FixedUpdate() {
-		Run ();
+		
 	}
 
-	void Run () {
-//		if (Mathf.Abs(forwardInput) > inputDelay) {
-//			//move
-//			rBody.velocity = transform.forward * forwardInput * forwardVel;
-//		} else 
-//			//zero velocity
-//			rBody.velocity = Vector3.zero;
+	void Move()
+	{
+		anim.SetFloat("Forward", Input.GetAxis("Vertical"));
+
 	}
 
 	void Turn() {
