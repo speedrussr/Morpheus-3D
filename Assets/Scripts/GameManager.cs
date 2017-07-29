@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour {
 	// Has the player selected a name?
 	public bool nameSelected = false;
 	public GameObject myNamePanel;
+	public bool netConnStatus = false;
 
 	// Private Variables
 	

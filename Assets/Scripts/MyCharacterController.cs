@@ -43,19 +43,24 @@ public class MyCharacterController : NetworkBehaviour {
 
 	void Update () {
 		if (isLocalPlayer) {
+			if (Input.GetButtonDown ("Vertical")) {
+				Move ();
+			}
+			if (Input.GetKey (KeyCode.Space)) {
+				Jump ();
+			}
 			GetInput ();
 			Turn ();
 		}
 	}
 
-	void FixedUpdate() {
-		
+	void Jump() {
+		anim.SetFloat ("Jump", Input.GetAxis ("Vertical"));
 	}
 
 	void Move()
 	{
-		anim.SetFloat("Forward", Input.GetAxis("Vertical"));
-
+			anim.SetFloat ("Forward", Input.GetAxis ("Vertical"));
 	}
 
 	void Turn() {
